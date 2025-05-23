@@ -1,0 +1,16 @@
+Steps to run the program
+1. save the zipped folder and extract all files
+2. Open terminal and for installing packages paste this:
+pip install flask pandas scikit-learn joblib
+click "enter"
+3. after Installation, Train the model paste this:
+python train_model.py
+cliclk "enter"
+4. Now start the server paste this:
+python app.py
+click "enter"
+5. After starting a link will be generated, now open your browser and paste this link:
+http://127.0.0.1:5000/
+6. Home page will be loaded < enter any restaurant details from the dataset
+< click on predict 
+< predicted rating will be generated

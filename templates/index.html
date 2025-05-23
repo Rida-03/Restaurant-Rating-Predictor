@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Rating Predictor</title>
+</head>
+<body>
+    <h2>Enter Restaurant Details</h2>
+    <form method="POST" action="/predict">
+        <label>Reviews Count:</label><br>
+        <input type="number" name="reviewsCount"><br>
+        <label>City:</label><br>
+        <input type="text" name="city"><br>
+        <label>Category Name:</label><br>
+        <input type="text" name="categoryName"><br>
+        <label>Rank:</label><br>
+        <input type="number" name="rank"><br>
+        <label>Price Range:</label><br>
+        <input type="number" name="price_min" placeholder="Min €"> to 
+        <input type="number" name="price_max" placeholder="Max €"><br><br>
+        <button type="submit">Predict Rating</button>
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
